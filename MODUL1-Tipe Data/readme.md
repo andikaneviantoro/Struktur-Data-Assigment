@@ -438,7 +438,7 @@ int main() {
 
 Program ini adalah sebuah program sederhana dalam bahasa C++ yang bertujuan untuk menerjemahkan kata dari bahasa Indonesia ke bahasa Inggris. Program ini menggunakan sebuah map yang disebut kamus_167 untuk menyimpan pasangan kata-kata Indonesia dan Inggris. Kemudian, program meminta pengguna untuk memasukkan sebuah kata dalam bahasa Indonesia. Setelah itu, program mencari kata tersebut di dalam map kamus_167 menggunakan fungsi translateKata_Dika167. Jika kata ditemukan di dalam map, program akan mengembalikan terjemahan bahasa Inggris dari kata tersebut. Namun, jika kata tidak ditemukan, program akan mengembalikan pesan "Kata tidak ditemukan". Setelah mendapatkan terjemahan, program akan menampilkannya kepada pengguna. Dengan demikian, program ini memungkinkan pengguna untuk menerjemahkan kata-kata sederhana dari bahasa Indonesia ke bahasa Inggris.
 
-Perbedaan Array dengan Map
+## Perbedaan Array dengan Map
 1. Struktur Data:
    - Array: Merupakan struktur data yang terdiri dari kumpulan elemen atau nilai yang disimpan dalam urutan tertentu. Setiap elemen dalam array diidentifikasi oleh indeks numerik, yang dimulai dari 0.
    - Map: Merupakan struktur data yang menyimpan kumpulan pasangan kunci-nilai di mana setiap kunci unik dan terkait dengan satu nilai tertentu. Map tidak memiliki urutan tertentu untuk pasangan kunci-nilainya.
