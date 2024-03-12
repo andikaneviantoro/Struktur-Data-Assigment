@@ -22,45 +22,41 @@ Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk mena
 ### 1. Tipe Data Primitif
 
 #include <iostream>
-#include <iomanip>
 
 using namespace std;
 
-// Tipe Data Primitif by Jordan
-
-int main(){
+int main()
+{
     char op;
     float num1, num2;
-
-    cout << "Enter operator (+, -, *, /): ";
+    // it allows user to enter operator i,e, +, -, *, /
     cin >> op;
-
-    cout << "Enter two operands: ";
+    // it allows user to enter the operands
     cin >> num1 >> num2;
-
+    // switch statement begins
     switch (op)
     {
+    // if user center +
     case '+':
-        cout << "Result: " << num1 + num2 << endl;
+        cout << num1 + num2;
         break;
+    // if user center -
     case '-':
-        cout << "Result: " << num1 - num2 << endl;
+        cout << num1 - num2;
         break;
+    // if user center *
     case '*':
-        cout << "Result: " << num1 * num2 << endl;
+        cout << num1 * num2;
         break;
+    // if user center /
     case '/':
-        if (num2 == 0) {
-            cout << "Result: " << fixed << setprecision(2) << num1 / num2 << endl;
-        } else {
-            cout << "Error!: Division by zero" << endl;
-        }
+        cout << num1 / num2;
         break;
-
+    // if the operator is other than +,-,* or /,
+    // error message will be display
     default:
-        cout << "Error! operator is not correct" << endl;
-        break;
-    }
+        cout << "Error! operator is not correct";
+    } // switch statement ends
     return 0;
 }
 
