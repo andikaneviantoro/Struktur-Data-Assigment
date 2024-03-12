@@ -15,11 +15,11 @@ Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk mena
 3. Tipe data Koleksi
    Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Contoh tipe data koleksi
    
-  a). Array
+     a). Array
   
-  b). Vector
+     b). Vector
   
-  c). Map
+     c). Map
 
 ## Guided 
 
