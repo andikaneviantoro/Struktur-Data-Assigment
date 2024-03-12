@@ -1,5 +1,6 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Tipe Data</h1>
-<p align="center">Andika Neviantoro</p>
+<p align="center">Andika Neviantoro - 2311102167</p>
+<p align="center">IF - 11 - E</p>
 
 ## Dasar Teori
 
