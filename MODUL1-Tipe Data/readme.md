@@ -21,44 +21,8 @@ Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk mena
 
 ### 1. Tipe Data Primitif
 
-#include <iostream>
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/ce36ca9f-91f5-4d7c-af35-3a9497cefab2)
 
-using namespace std;
-
-int main()
-{
-    char op;
-    float num1, num2;
-    // it allows user to enter operator i,e, +, -, *, /
-    cin >> op;
-    // it allows user to enter the operands
-    cin >> num1 >> num2;
-    // switch statement begins
-    switch (op)
-    {
-    // if user center +
-    case '+':
-        cout << num1 + num2;
-        break;
-    // if user center -
-    case '-':
-        cout << num1 - num2;
-        break;
-    // if user center *
-    case '*':
-        cout << num1 * num2;
-        break;
-    // if user center /
-    case '/':
-        cout << num1 / num2;
-        break;
-    // if the operator is other than +,-,* or /,
-    // error message will be display
-    default:
-        cout << "Error! operator is not correct";
-    } // switch statement ends
-    return 0;
-}
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
