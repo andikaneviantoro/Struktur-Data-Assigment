@@ -142,7 +142,7 @@ int main()
 }
 ```
 
-#### Otput :
+#### Output :
 ![Screenshot (2864)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/3c1ee186-1226-41ee-9f13-6abf9314a159)
 
 Array nilai dengan panjang 5 elemen (indeks 0 sampai 4) dideklarasikan dan diinisialisasi dengan nilai-nilai tertentu. Setelah array diinisialisasi, program mencetak isi array menggunakan pernyataan cout. Setiap elemen array dicetak satu per satu dengan menyertakan indeksnya.
