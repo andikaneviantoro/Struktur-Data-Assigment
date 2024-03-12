@@ -21,11 +21,11 @@ Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk mena
 
 ### 1. Tipe Data Primitif
 
->#include <iostream>
+#include <iostream>
 
->using namespace std;
+using namespace std;
 
->int main()
+int main()
 {
     char op;
     float num1, num2;
