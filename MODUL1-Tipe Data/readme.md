@@ -1,20 +1,62 @@
-# <h1 align="center">Laporan Praktikum Modul Tipe Data</h1>
+# <h1 align="center">Laporan Praktikum Modul 1 - Tipe Data</h1>
 <p align="center">Andika Neviantoro</p>
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk menampung informasi atau data sementara. Tipe data berfungsi untuk mempresentasikan jenis dari sebuah nilai yang terdapat dalam program. Adapun jenis tipe data dan penjelasannya yang terdapat pada bahasa C++ :
 
+1. Tipe data Primitif
+   Tipe data primitif adalah tipe data bawaan bahasa pemrograman dan bisa langsung digunakan programmer untuk mendeklarasikan variabel. Dalam C++, terdapat 7 tipe data yang termasuk tipe data primitif, yaitu: int, float, double, boolean, char, void dan wide_character.
+
+2. Tipe data Abstrak
+   Tipe Data Abstrak (ADT) adalah tipe (atau kelas) untuk objek yang perilakunya ditentukan oleh sekumpulan nilai dan serangkaian operasi. Definisi ADT hanya menyebutkan operasi apa yang akan dilakukan tetapi tidak menyebutkan bagaimana operasi tersebut akan dilaksanakan. Itu tidak menentukan bagaimana data akan diatur dalam memori dan algoritma apa yang akan digunakan untuk mengimplementasikan operasi. Disebut “abstrak” karena memberikan pandangan yang tidak bergantung pada implementasi.
+
+3. Tipe data Koleksi
+   Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Contoh tipe data koleksi
+   a). Array
+   b). Vector
+   c). Map
+   
 ## Guided 
 
-### 1. [Nama Topik]
+### 1. Tipe Data Primitif
 
-C++
 #include <iostream>
+
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
+int main()
+{
+    char op;
+    float num1, num2;
+    // it allows user to enter operator i,e, +, -, *, /
+    cin >> op;
+    // it allows user to enter the operands
+    cin >> num1 >> num2;
+    // switch statement begins
+    switch (op)
+    {
+    // if user center +
+    case '+':
+        cout << num1 + num2;
+        break;
+    // if user center -
+    case '-':
+        cout << num1 - num2;
+        break;
+    // if user center *
+    case '*':
+        cout << num1 * num2;
+        break;
+    // if user center /
+    case '/':
+        cout << num1 / num2;
+        break;
+    // if the operator is other than +,-,* or /,
+    // error message will be display
+    default:
+        cout << "Error! operator is not correct";
+    } // switch statement ends
     return 0;
 }
 
