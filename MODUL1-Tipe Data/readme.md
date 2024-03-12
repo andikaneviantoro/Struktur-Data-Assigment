@@ -63,63 +63,58 @@ int main()
 }
 ```
 
-Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Keempat operasi ini akan jalan jika user sudah menginput dua angka pada saat penginputan cin. Terdapat juga dua tipe data primitif pada program ini, yaitu char dan float. Tipe data char digunakan pada saat pemilihan switch case dan float digunakan sebagai tipe data 2 angka yang diinput user.
+DESKRIPSI PROGRAM
 
 ### 2. Tipe Data Abstrak
 
-C++
+```C++
 #include <stdio.h>
-#include <string.h>
 
-// Struct
+// struct
 struct Mahasiswa
 {
-    char name[50];
-    char address[50];
+    const char *name;
+    const char *address;
     int age;
 };
 
-// Tipe Data Abstrak by Jordan
-
-int main() {
-    // Menggunakan Struct
+int main()
+{
+    // menggunakan struct
     struct Mahasiswa mhs1, mhs2;
-
-    // Mengisi nilai ke struct
-    strcpy(mhs1.name, "Dian");
-    strcpy(mhs1.address, "Mataram");
+    // mengisi nilai ke struct
+    mhs1.name = "Dian";
+    mhs1.address = "Mataram";
     mhs1.age = 22;
-    strcpy(mhs2.name, "Bambang");
-    strcpy(mhs2.address, "Surabaya");
+    mhs2.name = "Bambang";
+    mhs2.address = "Surabaya";
     mhs2.age = 23;
 
-    // Mencetak isi dari struct
+    // mencetak isi struct
     printf("## Mahasiswa 1 ##\n");
-    printf("Nama: %s\n", mhs1.name);
-    printf("Alamat: %s\n", mhs1.address);
-    printf("Umur: %d\n", mhs1.age);
-    printf("\n");
+    printf("Name : %s\n", mhs1.name);
+    printf("Address : %s\n", mhs1.address);
+    printf("Age : %d\n", mhs1.age);
     printf("## Mahasiswa 2 ##\n");
-    printf("Nama: %s\n", mhs2.name);
-    printf("Alamat: %s\n", mhs2.address);
-    printf("Umur: %d\n", mhs2.age);
-
+    printf("Name : %s\n", mhs2.name);
+    printf("Address : %s\n", mhs2.address);
+    printf("Age : %d\n", mhs2.age);
     return 0;
 }
+```
 
-Kode di atas digunakan untuk mencetak isi dari struct. Struct merupakan salah satu contoh dari tipe data abstrak. Pada kode di atas terdapat sebuah struct Mahasiswa. Pada struct Mahasiswa ini, terdapat 3 nilai, yaitu char name dengan ukuran 50, char address dengan ukuran 50 juga, dan int age. Lalu pada int main, diisi nilai dan dideklarasikan struct Mahasiswa dengan 2 objek, yaitu mhs1 dengan nama Dian dan mhs2 dengan nama Bambang.
+DESKRIPSI PROGRAM
 
 ### 3. Tipe Data Koleksi
 
-C++
+```C++
 #include <iostream>
-#include <array>
+
 using namespace std;
 
-// Tipe Data Koleksi by Jordan
-
-int main() {
-    // Deklarasi dan inisialisasi array
+int main()
+{
+    // deklarasi dan inisialisasi array
     int nilai[5];
     nilai[0] = 23;
     nilai[1] = 50;
@@ -127,187 +122,187 @@ int main() {
     nilai[3] = 78;
     nilai[4] = 90;
 
-    // Mencetak array dengan tab
+    // menncetak array
     cout << "Isi array pertama : " << nilai[0] << endl;
-    cout << "Isi array kedua : " << nilai[1] << endl;
+    cout << "Isi array kedua :  " << nilai[1] << endl;
     cout << "Isi array ketiga : " << nilai[2] << endl;
     cout << "Isi array keempat : " << nilai[3] << endl;
     cout << "Isi array kelima : " << nilai[4] << endl;
-
     return 0;
 }
+```
 
-Kode di atas digunakan untuk mencetak isi dari sebuah array. Array merupakan salah satu contoh dari tipe data koleksi. Pada kode di atas, terdapat library array yang membantu proses pemrogramannya. Terdapat array nilai yang dapat menampung 5 nilai, yaitu 23, 50, 34, 78, dan 90. Lalu dideklarasikan di bawahnya.
+DESKRIPSI PROGRAM
 
 ## Unguided 
 
 ### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
-C++
-/*
-oleh Jordan Angkawijaya - 2311102139
-*/
-
+```C++
 #include <iostream>
-#include <cmath> // Library untuk fungsi pemangkatan dibawah
-
+#include <cmath> // Untuk fungsi sqrt (akar kuadrat)
 using namespace std;
 
-char Choice_2139; // Data primitif char untuk pilihan menu Choice_2139
-float One_2139, Two_2139; // Data primitif float untuk bilangan pertama dan kedua supaya bisa menyimpan bilangan desimal
-
-void JordanProgramStart_2139() { // Fungsi untuk menampilkan menu pilihan
-    cout << "KALKULATOR JORDAN";
-    cout << "\nA. Penjumlahan";
-    cout << "\nB. Perkalian";
-    cout << "\nC. Pembagian";
-    cout << "\nD. Pengurangan";
-    cout << "\nE. Pangkat" << endl;
-    cout << "Masukkan Pilihan : ";
-    cin >> Choice_2139;
+// Fungsi untuk menghitung luas balok
+float hitungLuasBalok_167(float panjang, float lebar, float tinggi) {
+    return 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
 }
 
-float AdditionLogic_2139() { // Fungsi Penjumlahan
-    cout << "\n--- PENJUMLAHAN ---" << endl;
-    cout << "Bilangan pertama : ";
-    cin >> One_2139;
-    cout << "Ditambah bilangan kedua : ";
-    cin >> Two_2139;
-    cout << "Hasil penjumlahan : ";
-    return One_2139 + Two_2139; // Mengembalikan hasil penjumlahan
+// Fungsi untuk menghitung luas kubus
+float hitungLuasKubus_167(float sisi) {
+    return 6 * sisi * sisi;
 }
 
-float MultiplicationLogic_2139() { // Fungsi Perkalian
-    cout << "\n--- PERKALIAN ---" << endl;
-    cout << "Bilangan pertama : ";
-    cin >> One_2139;
-    cout << "Dikali bilangan kedua : ";
-    cin >> Two_2139;
-    cout << "Hasil perkalian : ";
-    return One_2139 * Two_2139; // Mengembalikan hasil perkalian
+// Fungsi untuk menghitung luas tabung
+float hitungLuasTabung_167(float jariJari, float tinggi) {
+    return 2 * 3.14 * jariJari * (jariJari + tinggi);
 }
 
-float DivisionLogic_2139() { // Fungsi Pembagian
-    cout << "\n--- PEMBAGIAN ---" << endl;
-    cout << "Bilangan pertama : ";
-    cin >> One_2139;
-    cout << "Dibagi bilangan kedua : ";
-    cin >> Two_2139;
-    cout << "Hasil pembagian : ";
-    return One_2139 / Two_2139; // Mengembalikan hasil pembagian
-}
-
-float SubtractionLogic_2139() { // Fungsi Pengurangan
-    cout << "\n--- PENGURANGAN ---" << endl;
-    cout << "Bilangan pertama : ";
-    cin >> One_2139;
-    cout << "Dikurangi bilangan kedua : ";
-    cin >> Two_2139;
-    cout << "Hasil pengurangan : ";
-    return One_2139 - Two_2139; // Mengembalikan hasil pengurangan
-}
-
-float SquaredLogic_2139() { // Fungsi Pemangkatan
-    cout << "\n--- PEMANGKATAN ---" << endl;
-    cout << "Bilangan pertama : ";
-    cin >> One_2139;
-    cout << "Dipangkati bilangan kedua : ";
-    cin >> Two_2139;
-    cout << "Hasil pemangkatan : ";
-    return pow(One_2139, Two_2139); // Mengembalikan hasil pemangkatan dan pow itu fungsi dari library cmath diatas
+// Fungsi untuk menghitung luas kerucut
+float hitungLuasKerucut_167(float jariJari, float tinggi) {
+    return 3.14 * jariJari * (jariJari + sqrt(tinggi * tinggi + jariJari * jariJari));
 }
 
 int main() {
-    do { // Looping menu pilihan
-        JordanProgramStart_2139();
-        switch (Choice_2139) { // Switch case untuk memilih menu
-            case 'A':
-            case 'a':
-                cout << AdditionLogic_2139() << "\n" << endl; // Jika user memilih A/a, maka akan menjalankan fungsi penjumlahan
-                break;
-            case 'B':
-            case 'b':
-                cout << MultiplicationLogic_2139() << "\n" << endl; // Jika user memilih B/b, maka akan menjalankan fungsi perkalian
-                break;
-            case 'C':
-            case 'c':
-                cout << DivisionLogic_2139() << "\n" << endl; // Jika user memilih C/c, maka akan menjalankan fungsi pembagian
-                break;
-            case 'D':
-            case 'd':
-                cout << SubtractionLogic_2139() << "\n" << endl; // Jika user memilih D/d, maka akan menjalankan fungsi pengurangan
-                break;
-            case 'E':
-            case 'e':
-                cout << SquaredLogic_2139() << "\n" << endl; // Jika user memilih E/e, maka akan menjalankan fungsi pemangkatan
-                break;
-            default:
-                cout << "\nUhh.. not a valid number so yea goodbye" << endl;
-                return 0;
+    int pilihan;
+    do {
+        cout << "=================+++++++++++++=================" << endl;
+        cout << "SELAMAT DATANG DI PERHITUNGAN BENTUK RUANG DIKA" << endl;
+        cout << "=================+++++++++++++=================" << endl;
+
+        cout << "Pilih bentuk ruang : " << endl;
+        cout << "1. balok" << endl;
+        cout << "2. kubus" << endl;
+        cout << "3. tabung" << endl;
+        cout << "4. kerucut" << endl;
+        cout << "5. keluar" << endl;
+        cout << "Masukkan Pilihan (1-5) :";
+        cin >> pilihan;
+
+        if (pilihan == 1) {
+            float panjang, lebar, tinggi;
+            cout << "Masukkan panjang balok : ";
+            cin >> panjang;
+            cout << "Masukkan lebar balok :";
+            cin >> lebar;
+            cout << "Masukkan tinggi balok :";
+            cin >> tinggi;
+            cout << "Luas balok: " << hitungLuasBalok_167(panjang, lebar, tinggi) << endl;
+        } else if (pilihan == 2) {
+            float sisi;
+            cout << "Masukkan panjang sisi kubus: ";
+            cin >> sisi;
+            cout << "Luas kubus: " << hitungLuasKubus_167(sisi) << endl;
+        } else if (pilihan == 3) {
+            float jariJari, tinggi;
+            cout << "Masukkan jari-jari tabung : ";
+            cin >> jariJari;
+            cout << "Masukkan tinggi tabung :";
+            cin >> tinggi;
+            cout << "Luas tabung: " << hitungLuasTabung_167(jariJari, tinggi) << endl;
+        } else if (pilihan == 4) {
+            float jariJari, tinggi;
+            cout << "Masukkan jari-jari kerucut : ";
+            cin >> jariJari;
+            cout << "Masuskkan tinggi kerucut :";
+            cin >> tinggi;
+            cout << "Luas kerucut: " << hitungLuasKerucut_167(jariJari, tinggi) << endl;
+        } else if (pilihan != 5) {
+            cout << "Pilihan tidak tersedia, Silakan pilih kembali." << endl;
         }
-    } while (Choice_2139 != 0); // Looping akan terus berjalan selama user tidak memilih 0
+    } while (pilihan != 5);
+
+    cout << "Terimakasih Telah Menggunakan Program Dika Bangun Ruang" << endl;
 
     return 0;
 }
+```
 
 #### Output:
-![Screenshot Output Unguided 1](Output-Unguided-1_Jordan.png)
-Kode di atas digunakan untuk memilih sebuah opsi diantara opsi pertambahan (+), pengurangan(-), perkalian (*), pembagian (/), dan pemangkatan (^). Kode di atas juga memiliki library cmath untuk mempermudah logika coding pemangkatan. Kode di atas juga memiliki 5 fungsi dan 1 prosedur, di mana 5 fungsi ini menampung logika pertambahan hingga pemangkatan dan 1 prosedur menampung tampilan awal menu kalkulator Jordan. Program ini juga dilengkapi dengan perulangan do while jadi user dapat mengulangi program itu selama user tidak menginput angka 0.
+![Screenshot (2858)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/19ce02ce-650d-45c3-ad89-fff344fa2ce8)
+
+DESKRIPSI PROGRAMA
 
 Kesimpulan Tipe Data Primitif:<br/>
-Tipe data primitif merupakan sebuah tipe data yang sudah ditentukan oleh sistem, disediakan oleh banyak bahasa pemrograman, dan merupakan blok bangunan fundamental untuk menyimpan nilai-nilai yang bersifat sederhana.
+
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
 
-C++
-/*
-oleh Jordan Angkawijaya - 2311102139
-*/
-
-// Contoh Program Struct dan Class
+```C++
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-// Struct Person_2139 yang berisi data nama string dan umur int
-struct Person_2139 {
-    string Name_2139;
-    int Age_2139;
+// Struktur untuk merepresentasikan barang
+struct Barang_167 {
+    string namaBarang;
+    int jumlahBarang;
 };
 
-// Class Vehicle_2139 yang berisi data brand string, model string, dan tahun rilis int dalam akses public
-class Vehicle_2139 {
-  public:
-    string Brand_2139;   
-    string Model_2139;
-    int YearReleased_2139;
+// Kelas untuk manajemen stok barang
+class StokBarang_167 {
+private:
+    Barang_167 *daftarBarang;
+    int kapasitasBarang;
+    int jumlahBarang;
+
+public:
+    // Konstruktor
+    StokBarang_167(int size) {
+        kapasitasBarang = size;
+        daftarBarang = new Barang_167[kapasitasBarang];
+        jumlahBarang = 0;
+    }
+
+    // Destruktor
+    StokBarang_167() {
+        delete[] daftarBarang;
+    }
+
+    // Menambah barang ke stok
+    void tambahBarang_167(string nama, int jumlah) {
+        if (jumlahBarang < kapasitasBarang) {
+            daftarBarang[jumlahBarang].namaBarang = nama;
+            daftarBarang[jumlahBarang].jumlahBarang = jumlah;
+            jumlahBarang++;
+            cout << "(+) Barang berhasil ditambahkan ke stok" << endl;
+        } else {
+            cout << "Stok penuh, tidak bisa menambah barang baru." << endl;
+        }
+    }
+
+    // Menampilkan daftar barang di stok
+    void tampilkanStok_167() {
+        cout << "===========+++++++++===========" << endl;
+        cout << "Daftar stok barang di Toko Dika:" << endl;
+        cout << "===========+++++++++===========" << endl;
+        for (int i = 0; i < jumlahBarang; i++) {
+            cout << i+1 << ". " << daftarBarang[i].namaBarang << " : " << daftarBarang[i].jumlahBarang << " box" << endl;
+        }
+    }
 };
 
 int main() {
-    cout << "-=-= Declaration of Struct and Class by Jordan =-=-" << endl;
+    // Membuat objek dari kelas StokBarang dengan kapasitas stok 5 barang
+    StokBarang_167 stok(5);
 
-    // Deklarasi Struct Person_2139
-    Person_2139 person{"Jordan Angkawijaya", 20};
-    cout << "\n- Biography - " << endl;
-    cout << "Name: " << person.Name_2139 << endl;
-    cout << "Age: " << person.Age_2139 << endl;
+    // Menambahkan barang ke stok
+    stok.tambahBarang_167("Buku", 25);
+    stok.tambahBarang_167("Pensil", 20);
+    stok.tambahBarang_167("Penghapus", 15);
+    stok.tambahBarang_167("Penggaris", 12);
+    stok.tambahBarang_167("Pulpen", 10);
 
-    // Deklarasi Class Vehicle_2139
-    Vehicle_2139 vehicle;
-    vehicle.Brand_2139 = "Honda";
-    vehicle.Model_2139 = "CB750";
-    vehicle.YearReleased_2139 = 1969;
-    cout << "\n- Jordan's Vehicle -" << endl;
-    cout << "Vehicle brand: " << vehicle.Brand_2139 << endl;
-    cout << "Vehicle model: " << vehicle.Model_2139 << endl;
-    cout << "Vehicle year released: " << vehicle.YearReleased_2139 << endl;
+    // Menampilkan daftar barang di stok
+    stok.tampilkanStok_167();
 
     return 0;
 }
-
+```
 #### Output:
-![Screenshot Output Unguided 2](Output-Unguided-2_Jordan.png)
-Kode di atas digunakan untuk mencetak sebuah class dan struct. Pada kode di atas, terdapat class Vehicle_2139 yang menampung nilai string Brand_2139, string Model_2139, dan int YearReleased_2139 dengan akses publik. Ada juga struct Person_2139 dengan nilai string Name_2139 dan int Age_2139. Struct Person_2139 ini diisi dengan nilai Jordan Angkawijaya dengan umur 20 dan Class Vehicle_2139 diisi dengan nilai Honda CB750 tahun 1969, lalu struct & class ini kemudian dideklarasikan.
+![Screenshot (2859)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/a0f12e8a-eacf-466e-a7f1-2e86a406f332)
+
+DESKRIPSI PROGRAM
 
 A. Fungsi dari Class<br/>
 Class adalah salah satu dari konsep OOP yang digunakan untuk membungkus data abstraksi procedural sebagai deskripsi tergeneralisir atau rancangan dari sebuah object untuk mendefinisikan atau menggambarkan isi dan tingkah laku sebagai entitas dari object. Fitur class adalah fitur Object Oriented Program pada bahasa C++.
@@ -317,40 +312,117 @@ Data struktur, atau Struct dalam pemrograman C++, adalah sekumpulan data yang di
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
-C++
-/*
-oleh Jordan Angkawijaya - 2311102139
-*/
-
-// Contoh Program Fungsi Map
+```C++
 #include <iostream>
-#include <map> // Library supaya bisa menggunakan fungsi map dibawah
+#include <map>
+#include <string>
 
 using namespace std;
 
-int main() {
-    
-    // Deklarasi map dengan key int dan value string
-    map<int, string> food_2139;
-  
-    // Menambahkan elemen-elemen ke dalam map
-    food_2139[1] = "Hamburger";
-    food_2139[2] = "Fried Chicken";
-    food_2139[3] = "Stew";
-    food_2139[4] = "Roasted Duck";
-    food_2139[5] = "Ramen";
-
-    cout << "-=-= Welcome to Jordan's Food Menu! =-=-" << endl;
-    for (int i = 1; i <= food_2139.size(); ++i) { // Looping untuk menampilkan semua elemen map
-        cout << "No." << i << " " << food_2139[i] << endl; // Menampilkan elemen map
+// Fungsi untuk melakukan translasi kata
+string translateKata_Dika167(const map<string, string>& kamus_167, const string& kata_167) {
+    auto iter = kamus_167.find(kata_167);
+    if (iter != kamus_167.end()) {
+        return iter->second; // Mengembalikan kata terjemahan jika ditemukan
+    } else {
+        return "Kata tidak ditemukan"; // Mengembalikan pesan jika kata tidak ditemukan
     }
+}
+
+int main() {
+    // Mendefinisikan map untuk menyimpan kamus Indonesia-Inggris
+    map<string, string> kamus_167 = {
+        {"halo", "hello"},
+        {"aku", "I"},
+        {"cinta", "love"},
+        {"kamu", "you"},
+        {"belajar", "learn"},
+        {"makan", "eat"},
+        {"minum", "drink"},
+        {"rumah", "house"},
+        {"mobil", "car"},
+        {"kucing", "cat"},
+        {"anjing", "dog"},
+        {"burung", "bird"},
+        {"buku", "book"},
+        {"pensil", "pencil"},
+        {"komputer", "computer"},
+        {"sekolah", "school"},
+        {"meja", "table"},
+        {"kursi", "chair"},
+        {"televisi", "television"},
+        {"musik", "music"},
+        {"senang", "happy"},
+        {"sedih", "sad"},
+        {"dia", "he/she"},
+        {"kita", "we"},
+        {"mereka", "they"},
+        {"sekolah", "school"},
+        {"rumah", "house"},
+        {"burung", "bird"},
+        {"mobil", "car"},
+        {"motor", "motorcycle"},
+        {"buku", "book"},
+        {"pensil", "pencil"},
+        {"komputer", "computer"},
+        {"meja", "table"},
+        {"kursi", "chair"},
+        {"televisi", "television"},
+        {"handphone", "cellphone"},
+        {"buah", "fruit"},
+        {"sayur", "vegetable"},
+        {"air", "water"},
+        {"api", "fire"},
+        {"angin", "wind"},
+        {"matahari", "sun"},
+        {"bulan", "moon"},
+        {"bintang", "star"},
+        {"pohon", "tree"},
+        {"hewan", "animal"},
+        {"laut", "sea"},
+        {"gunung", "mountain"},
+        {"danau", "lake"},
+        {"sungai", "river"},
+        {"jalan", "road"},
+        {"kota", "city"},
+        {"desa", "village"},
+        {"negara", "country"},
+        {"selamat", "congratulations"},
+        {"terima kasih", "thank you"},
+        {"tolong", "please"},
+        {"maaf", "sorry"},
+        {"pergi", "go"},
+        {"datang", "come"},
+        {"makan", "eat"},
+        {"minum", "drink"},
+        {"berjalan", "walk"},
+        {"berlari", "run"},
+        {"tidur", "sleep"},
+        // Tambahkan kata-kata lain di sini sesuai kebutuhan
+    };
+
+    // Meminta input dari pengguna
+    string kata_167;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "TRANSLATE KATA INDONESIA - INGGRIS" << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "Masukkan kata (bahasa Indonesia): ";
+    cin >> kata_167;
+
+    // Menerjemahkan kata
+    string terjemahan = translateKata_Dika167(kamus_167, kata_167);
+
+    // Menampilkan hasil translasi
+    cout << "Terjemahan dalam bahasa inggris: " << terjemahan << endl;
 
     return 0;
 }
+```
 
 #### Output:
-![Screenshot Output Unguided 3](Output-Unguided-3_Jordan.png)
-Kode di atas digunakan untuk mencetak isi dari sebuah map. Pada kode di atas, terdapat sebuah map food_2139 dengan key yang bersifat int dan nilai-nilainya yang bersifat string. Terdapat 5 elemen yang sudah diisi dengan nama-nama makanan. Lalu, isi dari map food_2139 dideklarasikan dengan perulangan for supaya semua elemen dapat ditampilkan.
+![Screenshot (2860)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/6f97d39a-fa03-47de-b778-2460dc3d68eb)
+
+DESKRIPSI PROGRAM
 
 Perbedaan Array dengan Map
 1. Indeks
@@ -368,8 +440,7 @@ Perbedaan Array dengan Map
 
 
 ## Kesimpulan
-Tipe data C++ merupakan elemen penting dalam pemrograman yang menentukan jenis nilai yang dapat disimpan variabel dan operasi yang dapat dilakukan pada nilai tersebut. Memahami tipe data dengan baik membantu kita sebagai programmer dalam menulis program yang lebih efisien, akurat, dan mudah dibaca.
+
 
 ## Referensi
-[1] Khoirudin, Algoritma & Struktur Data dengan Python 3. Semarang: Universitas Semarang Press, 2019.<br/>
-[2] Meidyan Permata Putri, et al., Algoritma dan Struktur Data. Bandung: Widina Bhakti Persada Bandung, 2022.
+
