@@ -66,6 +66,9 @@ int main()
 }
 ```
 
+#### Output :
+![Screenshot (2862)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/090ec62d-ce18-4900-b990-ef4f96e9c70d)
+
 Program ini adalah kalkulator sederhana yang meminta pengguna untuk memasukkan operator matematika dan dua operand numerik. Setelah pengguna memasukkan operator dan operand, program menggunakan sebuah pernyataan switch untuk mengecek operator yang dimasukkan pengguna. Berdasarkan operator tersebut, program akan melakukan operasi yang sesuai (penjumlahan, pengurangan, perkalian, atau pembagian) pada dua operand yang dimasukkan, dan kemudian mencetak hasilnya. Jika operator yang dimasukkan tidak sesuai dengan yang diharapkan (+, -, *, /), maka program akan mencetak pesan kesalahan.
 
 ### 2. Tipe Data Abstrak
@@ -106,6 +109,9 @@ int main()
 }
 ```
 
+#### Output :
+![Screenshot (2863)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/4c5376d5-a868-459d-bbfe-24eb3d9ddff9)
+
 Program dalam bahasa C++ yang menggunakan struktur (struct) untuk menyimpan informasi tentang mahasiswa.
 Program ini menggunakan struktur Mahasiswa untuk menyimpan informasi tentang dua mahasiswa. Setelah mendeklarasikan struktur dan variabel struktur untuk masing-masing mahasiswa, program mengisi nilai ke dalam variabel struktur dan mencetak informasi masing-masing mahasiswa menggunakan fungsi printf. Akhirnya, program mengembalikan nilai 0.
 
@@ -135,6 +141,9 @@ int main()
     return 0;
 }
 ```
+
+#### Otput :
+![Screenshot (2864)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/3c1ee186-1226-41ee-9f13-6abf9314a159)
 
 Array nilai dengan panjang 5 elemen (indeks 0 sampai 4) dideklarasikan dan diinisialisasi dengan nilai-nilai tertentu. Setelah array diinisialisasi, program mencetak isi array menggunakan pernyataan cout. Setiap elemen array dicetak satu per satu dengan menyertakan indeksnya.
 
