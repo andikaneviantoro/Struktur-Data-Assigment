@@ -19,7 +19,7 @@ Tipe data adalah suatu memori atau media pada komputer yang digunakan untuk mena
    
 ## Guided 
 
-### 1. Tipe Data Primitif
+### 1. [Tipe Data Primitif]
 
 #include <iostream>
 
