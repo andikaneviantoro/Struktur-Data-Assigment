@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 2 - Tipe Data</h1>
+# <h1 align="center">Laporan Praktikum Modul 2 - Array</h1>
 <p align="center">Andika Neviantoro - 2311102167</p>
 <p align="center">IF - 11 - E</p>
 
