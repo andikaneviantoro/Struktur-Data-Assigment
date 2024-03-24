@@ -485,6 +485,9 @@ Program juga menyediakan antarmuka pengguna melalui fungsi main(), dimana penggu
 ####    f. Tampilkan seluruh data
 
 ```C++
+//ANDIKA NEVIANTORO
+//2311102167
+
 #include <iostream>
 #include <string>
 
@@ -733,6 +736,9 @@ Fungsi main() berfungsi sebagai antarmuka pengguna, dimana pengguna dapat memili
 ### Cleora 55.000
 
 ```C++
+//ANDIKA NEVIANTORO
+//2311102167
+
 #include <iostream>
 using namespace std;
 
