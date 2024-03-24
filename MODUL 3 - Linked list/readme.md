@@ -990,5 +990,5 @@ Metode linked list pada adalah sebuah teknik yang efektif untuk menyimpan dan me
 ## Referensi
 [1] "Struktur Data Linked List : Pengertian, Karakteristik, dan Jenis - jenisnya" Trivusi, 2022.
 
-[2] Ulum, M. Bahrul. "Modul Struktur Data - Linked List" Universitas Esa Unggu, 2018.
+[2] Aryandi, Muhammad. "Belajar Struktur Data: Linked List" Medium, 2023.
 
