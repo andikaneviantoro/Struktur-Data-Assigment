@@ -4,15 +4,16 @@
 
 ## Dasar Teori
 
-Linked list adalah strukur data linier berbentuk rantai simpul di mana setiap simpul menyimpan 2 item, yaitu nilai data dan pointer ke simpul elemen berikutnya. Berbeda dengan array, elemen linked list tidak ditempatkan dalam alamat memori yang berdekatan melainkan elemen ditautkan menggunakan pointer. Simpul pertama dari linked list disebut sebagai head atau simpul kepala. Apabila linked list berisi elemen kosong, maka nilai pointer dari head menunjuk ke NULL. Begitu juga untuk pointer berikutnya dari simpul terakhir atau simpul ekor akan menunjuk ke NULL.
+Linked list adalah struktur data linier yang terdiri dari sejumlah node yang saling terhubung melalui referensi atau pointer. Setiap node dalam linked list menyimpan data dan referensi ke node berikutnya. Ini berbeda dengan array, di mana elemen-elemen data disimpan secara berurutan dalam memori. Setiap node dalam linked list terdiri dari dua komponen utama: data dan pointer. Komponen data menyimpan nilai atau informasi yang ingin kita simpan dalam linked list. Misalnya, jika kita ingin membuat linked list untuk menyimpan angka, komponen data akan menyimpan nilai angka tersebut. Sedangkan pointer menyimpan referensi atau alamat memori dari node berikutnya dalam linked list[2].
 
 1. Single Linked List
-   single Linked list adalah linked list unidirectional. Jadi, kita hanya dapat melintasinya dalam satu arah, yaitu dari simpul kepala ke simpul ekor. Dalam       
-   operasi Single Linked List, umumnya dilakukan operasi penambahan dan penghapusan simpul pada awal atau akhir daftar, serta pencarian dan pengambilan nilai pada    simpul tertentu dalam daftar. Karena struktur data ini hanya memerlukan satu pointer untuk setiap simpul, maka Single Linked List umumnya lebih efisien dalam      penggunaan memori dibandingkan dengan jenis Linked List lainnya, seperti Double Linked List dan Circular Linked List. Single linked list yang kedua adalah         circular linked list. Perbedaan circular linked list dan non circular linked adalah penunjuk next pada node terakhir pada circular linked list akan selalu         merujuk ke node pertama.
+   Pada linked list tunggal, setiap node hanya memiliki satu pointer yang mengarah ke node berikutnya dalam urutan. Pointer ini dikenal sebagai “next” atau “next 
+   pointer”. Dengan menggunakan pointer ini, kita dapat bergerak maju melalui linked list dari elemen pertama (head) hingga elemen terakhir (tail). Namun, untuk 
+   mencari node sebelumnya dari suatu node, kita perlu melintasi linked list secara linier dari awal hingga mencapai node yang diinginkan[2].
 
 2. Double Linked list
-   Double Linked List adalah struktur data Linked List yang mirip dengan Single Linked List, namun dengan tambahan satu pointer tambahan pada setiap simpul yaitu     pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan untuk melakukan operasi penghapusan dan penambahan    pada simpul mana saja secara efisien. Setiap simpul pada Double Linked List memiliki tiga elemen penting, yaitu elemen data (biasanya berupa nilai), pointer 
-   next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya.
+   Doubly linked list adalah linked list bidirectional. Jadi, kita bisa melintasinya secara dua arah. Tidak seperti singly linked list, simpul doubly linked list 
+   berisi satu pointer tambahan yang disebut previous pointer. Pointer ini menunjuk ke simpul sebelumnya[1].
 
    
 ## Guided 
