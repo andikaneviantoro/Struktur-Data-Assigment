@@ -1,3 +1,8 @@
+//2311102167
+//ANDIKA NEVIANTORO
+//IF-11-E
+
+
 #include <iostream>
 #include <vector>
 #include <string>
