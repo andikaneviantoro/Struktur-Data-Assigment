@@ -1,11 +1,10 @@
 //2311102167
 //ANDIKA NEVIANTORO
-//IF-11-E
-
 
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip> // Untuk menggunakan setw()
 
 using namespace std;
 
@@ -75,6 +74,25 @@ public:
             }
         }
     }
+
+    // Fungsi untuk menampilkan seluruh data mahasiswa dalam bentuk tabel
+    void tampilkanSeluruhData() {
+        // Header tabel
+        cout << "==============================================================================" << endl;
+        cout << "|   NIM   |         Nama        |  Nilai  |" << endl;
+        cout << "==============================================================================" << endl;
+
+        // Menampilkan data mahasiswa
+        for (int i = 0; i < SIZE; ++i) {
+            for (Mahasiswa mhs : table[i]) {
+                // Format output dalam bentuk tabel
+                cout << "| " << setw(8) << left << mhs.nim << " | " << setw(20) << left << mhs.nama << " | " << setw(7) << right << mhs.nilai << " |" << endl;
+            }
+        }
+
+        // Footer tabel
+        cout << "==============================================================================" << endl;
+    }
 };
 
 int main() {
@@ -90,7 +108,8 @@ int main() {
         cout << "2. Hapus data mahasiswa" << endl;
         cout << "3. Cari data mahasiswa berdasarkan NIM" << endl;
         cout << "4. Cari data mahasiswa dengan rentang nilai (80 - 90)" << endl;
-        cout << "5. Keluar" << endl;
+        cout << "5. Tampilkan seluruh data mahasiswa" << endl;
+        cout << "6. Keluar" << endl;
         cout << "Pilih: ";
         cin >> choice;
 
@@ -119,13 +138,17 @@ int main() {
                 hashTable.cariByNilai(80, 90);
                 break;
             case 5:
+                cout << "Seluruh data mahasiswa:" << endl;
+                hashTable.tampilkanSeluruhData();
+                break;
+            case 6:
                 cout << "Terima kasih!" << endl;
                 break;
             default:
                 cout << "Pilihan tidak valid, silakan coba lagi." << endl;
                 break;
         }
-    } while (choice != 5);
+    } while (choice != 6);
 
     return 0;
 }
