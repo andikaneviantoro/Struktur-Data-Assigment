@@ -6,14 +6,14 @@
 
 ### Hash Table
 
-Hash Table adalah struktur data yang digunakan untuk menyimpan dan mengelola data dengan cepat dan efisien. Ini beroperasi dengan prinsip kunci-nilai, di mana setiap elemen data memiliki kunci yang unik yang digunakan untuk mengakses atau memanipulasinya. Hash Table (Tabel Hash) adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Ini menggunakan fungsi hash untuk mengonversi kunci menjadi indeks dalam array. Dengan cara ini, akses ke data menjadi sangat cepat karena kita dapat langsung menghitung indeks tempat data disimpan. Ini cocok untuk pencarian, penyisipan, penghapusan, dan pembaruan data dalam waktu konstan, asalkan tidak ada konflik dalam fungsi hash (collision).
+Hash Table adalah struktur data yang digunakan untuk menyimpan dan mengelola data dengan cepat dan efisien. Ini beroperasi dengan prinsip kunci-nilai, di mana setiap elemen data memiliki kunci yang unik yang digunakan untuk mengakses atau memanipulasinya. Hash Table (Tabel Hash) adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Ini menggunakan fungsi hash untuk mengonversi kunci menjadi indeks dalam array. Dengan cara ini, akses ke data menjadi sangat cepat karena kita dapat langsung menghitung indeks tempat data disimpan. Ini cocok untuk pencarian, penyisipan, penghapusan, dan pembaruan data dalam waktu konstan, asalkan tidak ada konflik dalam fungsi hash (collision)[1].
 
 ### Kegunaan Struktur Data Hash Table 
 
 - Pencarian Cepat: Dapat digunakan untuk mencari data dengan cepat berdasarkan key. Ini sangat berguna dalam aplikasi seperti basis data, kamus, dan cache.
 - Penyimpanan Data: Hash table dapat digunakan untuk menyimpan data dengan efisien. Data dapat diambil dan dimasukkan ke dalam tabel dengan waktu konstan, 
   asalkan tidak ada collision yang signifikan.
-- Implementasi Struktur Data Lain: Hash table dapat digunakan untuk mengimplementasikan struktur data lain, seperti set dan map.
+- Implementasi Struktur Data Lain: Hash table dapat digunakan untuk mengimplementasikan struktur data lain, seperti set dan map[1].
 
 ### Operasi dalam Struktur Data Hash Table
 
@@ -23,7 +23,7 @@ Hash Table adalah struktur data yang digunakan untuk menyimpan dan mengelola dat
 - Update
 - Collision Handling
 - Resize
-- Iterasi
+- Iterasi[1].
 
 ### Cara kerja Struktur Data Hash Table
 
@@ -43,7 +43,7 @@ Dalam beberapa kasus, dua kunci yang berbeda dapat menghasilkan nilai hash yang 
 Operasi utama yang digunakan dalam Hash Table adalah pencarian (untuk mencari elemen berdasarkan kunci), penambahan (untuk menambahkan elemen baru), dan penghapusan (untuk menghapus elemen). Fungsi hash digunakan dalam operasi ini untuk menentukan indeks elemen yang akan diakses atau dimodifikasi.
 
 6. *Efisiensi*,
-Efisiensi Hash Table tergantung pada efisiensi fungsi hash yang digunakan. Fungsi hash yang baik harus menghasilkan distribusi nilai hash yang merata untuk menghindari bentrokan yang berlebihan.
+Efisiensi Hash Table tergantung pada efisiensi fungsi hash yang digunakan. Fungsi hash yang baik harus menghasilkan distribusi nilai hash yang merata untuk menghindari bentrokan yang berlebihan[1].
 
 
    
@@ -216,7 +216,7 @@ int main()
 ![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/cf12215c-1b95-42ec-9211-763029dac6f4)
 
 
-Program diatas 
+Program diatas hash table diimplementasikan menggunakan array dari pointer ke node. Setiap node mewakili satu pasangan kunci-nilai. Fungsi hash yang sederhana digunakan untuk menghasilkan indeks dari kunci. Untuk menangani tabrakan (collision), chaining digunakan, yaitu ketika beberapa pasangan kunci-nilai memiliki indeks yang sama, mereka disimpan dalam linked list yang dihubungkan melalui pointer next. Di dalam kelas Hash Table menggunakan operasi, *insert(int key, int value)*, *get(int key)*, *remove(int key)*, *traverse()*.
 
 
 ### Guided 2
@@ -361,7 +361,9 @@ int main()
 ![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/3a2999a3-9636-414a-8727-4cdc5cdb79ff)
 
 
-Program ini 
+Program ini adalah implementasi sederhana dari hash table dalam bahasa pemrograman C++. Hash table digunakan untuk menyimpan pasangan data, dalam hal ini nama dan nomor telepon, dengan menggunakan fungsi hash untuk menentukan posisi penyimpanan data di dalam tabel hash. Kelas HashNode digunakan untuk merepresentasikan node individu dalam hash table. Setiap node memiliki atribut nama dan nomor telepon. Kelas HashMap adalah implementasi hash table itu sendiri. Ini menggunakan vektor sebagai array untuk menyimpan node-node. Setiap indeks dalam vektor merupakan bucket yang berisi node-node yang dihasilkan oleh fungsi hash yang sama. Kelas ini menyediakan operasi-operasi dasar seperti penyisipan (insert), pencarian berdasarkan nama (searchByName), dan penghapusan (remove). Selain itu, terdapat juga fungsi untuk mencetak isi seluruh hash table (print). Dalam fungsi main(), beberapa operasi diuji coba antara lain; Tiga pasangan nim mahasiswa disisipkan ke dalam hash table menggunakan fungsi insert(), Dilakukan pencarian nomor telepon berdasarkan nama menggunakan fungsi searchByName(), Dilakukan penghapusan data berdasarkan nama menggunakan fungsi remove(), Seluruh isi hash table dicetak menggunakan fungsi print().
+
+
 
 
 ## Unguided 
@@ -508,22 +510,39 @@ int main() {
 #### Output:
 
 ### Tambah Data
-![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/cc920a25-11c9-4158-92d6-0434dfc40a88)
-
-### 
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/a185fa99-2c0f-44d8-9752-4f40d8847742)
 
 
-Program di atas merupakan implementasi dari linked list circular. Kelas *LinkedListCircular* memiliki beberapa fungsi untuk operasi-operasi dasar pada linked list, seperti menambah, mengubah, dan menghapus data mahasiswa, serta menampilkan seluruh data mahasiswa. Setiap operasi tersebut dapat dilakukan di depan, di belakang, atau di tengah linked list.
-Di dalam *main()*, program menyediakan menu untuk pengguna agar dapat memilih operasi yang ingin dilakukan, seperti menambah, mengubah, atau menghapus data mahasiswa, serta menampilkan seluruh data mahasiswa. Pengguna dapat memilih menu sesuai kebutuhan, dan program akan menjalankan operasi yang dipilih. Selama program berjalan, data mahasiswa disimpan dalam linked list circular, yang artinya elemen terakhir terhubung kembali ke elemen pertama, membentuk lingkaran. Hal ini memungkinkan untuk melakukan traversing dari awal ke akhir linked list secara terus menerus.
+### Tampilan Awal
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/4bd09d48-c55b-419c-a9f6-635f423b458f)
+
+
+
+### Hapus Data
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/49a3419e-7dad-4bc2-8084-20ba5f8e3f08)
+
+
+### Setelah Hapus Data
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/d39d4ed2-d73c-4b5f-9c2b-9cdbd0c396af)
+
+
+### Mencari Data Berdasarkan Nim Mahasiswa
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/c8772a97-e321-4e40-ae21-85621c3cf84d)
+
+
+### Mencari Data Mahasiswa Berdasarkan Nilai
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/27a3361d-ca39-429b-ac31-bcbd08a828f6)
+
+
+Program di atas merupakan implementasi sederhana dari hash table dalam C++, yang digunakan untuk mengelola data mahasiswa. Dengan menggunakan hash function untuk menghasilkan indeks dari NIM, data mahasiswa disimpan dalam hash table. Program menyediakan beberapa operasi dasar seperti penambahan, penghapusan, dan pencarian data berdasarkan NIM atau rentang nilai, serta menampilkan seluruh data dalam bentuk tabel. Pengguna diberikan menu interaktif untuk memilih operasi yang diinginkan, dan program akan terus berjalan hingga pengguna memilih opsi untuk keluar. Dengan demikian, program ini memberikan penggunaan dasar dari struktur data hash table dalam mengelola data mahasiswa secara efisien.
 
 ## Kesimpulan
-Linked list circular melingkar adalah varian dari struktur data linked list yang memiliki sifat khusus di mana elemen terakhir terhubung kembali ke elemen pertama, membentuk sebuah lingkaran. Hal ini berbeda dengan linked list biasa yang memiliki elemen terakhir yang menunjuk ke NULL. Linked list circular memiliki keunggulan utama yaitu kemampuannya untuk melakukan traversing dari awal ke akhir linked list secara terus menerus tanpa harus kembali ke elemen pertama. Hal ini memungkinkan pengolahan data yang lebih efisien dalam beberapa kasus penggunaan, terutama ketika diperlukan akses berulang terhadap seluruh elemen dalam linked list. Linked list circular juga memiliki kemiripan dengan linked list ganda (double linked list) dalam hal sifat melingkar. Namun, linked list circular hanya memiliki satu pointer next untuk setiap elemen, sementara linked list ganda memiliki dua pointer (next dan prev) yang menghubungkan setiap elemen dengan elemen sebelum dan sesudahnya. Meskipun demikian, linked list circular juga memiliki kelemahan, seperti kompleksitas dalam penanganan kasus khusus, seperti menemukan elemen terakhir atau melakukan operasi pada elemen terakhir. Selain itu, kesalahan dalam implementasi operasi tambah dan hapus elemen dapat mengakibatkan terjadinya looping tak terbatas. Dengan demikian, penggunaan linked list circular melingkar harus dipertimbangkan dengan cermat sesuai dengan kebutuhan aplikasi dan karakteristik data yang diolah. Kelebihan dan kelemahan dari struktur data ini perlu dipahami dengan baik agar dapat memanfaatkannya secara efektif dalam pengembangan perangkat lunak.
+Hash table adalah struktur data yang sangat berguna dalam pemrograman komputer karena efisiensinya dalam menyimpan dan mengakses data. Dengan menggunakan fungsi hash, hash table dapat mengonversi kunci data menjadi indeks dalam array, memungkinkan akses data dengan kompleksitas waktu yang konstan dalam banyak kasus. Salah satu keuntungan penggunaan Hash Table yaitu waktu aksesnya yang cukup cepat, jika record yang dicari langsungberada pada angka hash lokasi penyimpanannya. 
 
 ## Referensi
-[1] "Pengantar Daftar Tertaut Melingkar" GeeksforGeeks, 2023.
-https://www.geeksforgeeks.org/circular-linked-list/
+[1] Annisa, "Struktur Data Hash Table: Pengertian, Cara Kerja dan Operasi Hash Table" FAKULTAS ILMU KOMPUTER DAN TEKNOLOGI INFORMASI, Umsu, 2023. https://fikti.umsu.ac.id/struktur-data-hash-table-pengertian-cara-kerja-dan-operasi-hash-table/
 
-[2] "Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya" Trivusi. 2022
-https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html
+[2] "Cara Menerapkan Contoh Tabel Hash di C/C++" DigitalOcean. 2023
+https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus
 
 
