@@ -36,7 +36,7 @@ Queue memiliki beberapa fungsi penting dalam pemrograman yaitu:
 - Pengelolaan Memori: Mengontrol penggunaan sumber daya seperti memori.
 - Aplikasi Chat: Membantu mengatur pesan sebelum ditampilkan.
 - Manajemen Proses: Mengatur proses yang akan dieksekusi oleh komputer.
-- Sistem Antrian: Dipakai di bank, rumah sakit, dll., mengatur giliran pelanggan
+- Sistem Antrian: Dipakai di bank, rumah sakit, dll., mengatur giliran pelanggan.[1]
 
 
 
@@ -360,7 +360,8 @@ int main() {
 ```
 
 #### Output:
-![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/fcfbd9ad-77ef-4654-9392-ce4d87cbe007)
+![image](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/2c31e981-eea4-4099-9b72-d956fb2b434b)
+
 
 
 Program ini implementasi dari struktur data antrian menggunakan linked list. Dalam program tersebut, struktur data antrian direpresentasikan melalui dua komponen utama: `Node`, yang memuat informasi nama dan NIM mahasiswa serta pointer ke node berikutnya, dan `Queue`, yang merepresentasikan antrian secara keseluruhan dengan pointer ke elemen depan (`front`) dan belakang (`back`) serta variabel `size` untuk menyimpan jumlah elemen. Fungsi-fungsi dalam struktur `Queue` seperti `enqueueAntrian`, `dequeueAntrian`, `countQueue`, `clearQueue`, dan `viewQueue` memberikan kemampuan untuk menambah, menghapus, menghitung, membersihkan, serta menampilkan elemen-elemen dalam antrian. Dengan penggunaan fungsi-fungsi tersebut, program mampu mengelola daftar mahasiswa dengan efisien. Dalam `main()`, program menguji fungsionalitasnya dengan menambah, menghapus, dan menampilkan daftar mahasiswa dalam antrian, memberikan pemahaman yang jelas tentang penggunaan struktur data antrian dengan linked list dalam konteks daftar mahasiswa.
