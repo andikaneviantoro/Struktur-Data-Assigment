@@ -5,7 +5,38 @@
 ## Dasar Teori
 
 ### Pengertian Queue
+Queue adalah salah satu struktur data yang digunakan dalam pemrograman untuk menyimpan sekumpulan elemen dengan prinsip “First-In-First-Out” (FIFO), artinya elemen yang pertama masuk ke dalam antrian akan menjadi elemen yang pertama pula keluar dari antrian.[1]
 
+### Jenis - jenis Queue
+1. Simple Queue
+Merupakan jenis paling dasar dari antrian. Elemen-elemen ditambahkan di belakang dan dihapus dari depan antrian. Hal ini memastikan bahwa elemen yang pertama kali dimasukkan akan menjadi elemen yang pertama kali dikeluarkan.
+2. Circular Queue
+Bekerja jika elemen terakhir dalam antrian telah diisi, elemen berikutnya akan ditempatkan di awal antrian, menciptakan siklus. Hal ini memungkinkan penggunaan memori yang lebih efisien dalam beberapa kasus.
+3. Priority
+Jenis antrian yang memprioritaskan elemen berdasarkan prioritas tertentu yang terkait dengan setiap elemen. Elemen dengan prioritas lebih tinggi akan dikeluarkan lebih awal daripada elemen dengan prioritas lebih rendah.
+4. Double-Ended Queue (Dequeue)
+Double-Ended Queue, juga dikenal sebagai Dequeue, memungkinkan penambahan dan penghapusan elemen dari kedua ujung antrian, yaita di depan dan belakang. Ini memberikan fleksibilitas tambahan dalam manipulasi antrian.[1] 
+
+### Operasi pada Queue
+1. Create()
+2. IsEmpty()
+3. Fungsi Isfull
+4. Enqueue
+5. Dequeue
+6. Clear()
+7. Tampil(). [2]
+
+### Fungsi Queue
+Queue memiliki beberapa fungsi penting dalam pemrograman yaitu:
+- Mengatur Urutan: Menjaga urutan tugas, yang pertama masuk adalah yang pertama keluar. Seperti antrian nyata.
+- Penjadwalan: Membantu mengatur pekerjaan berdasarkan prioritas atau urutan, berguna saat banyak tugas.
+- Buffering: Sementara menyimpan data cepat sebelum diproses lebih lanjut.
+- Algoritma: Berguna dalam algoritma seperti BFS yang menjelajahi langkah demi langkah.
+- Simulasi: Digunakan dalam model antrian di dunia nyata, contohnya pesawat atau antrian belanja.
+- Pengelolaan Memori: Mengontrol penggunaan sumber daya seperti memori.
+- Aplikasi Chat: Membantu mengatur pesan sebelum ditampilkan.
+- Manajemen Proses: Mengatur proses yang akan dieksekusi oleh komputer.
+- Sistem Antrian: Dipakai di bank, rumah sakit, dll., mengatur giliran pelanggan
 
 
 
@@ -335,14 +366,15 @@ int main() {
 Program ini implementasi dari struktur data antrian menggunakan linked list. Dalam program tersebut, struktur data antrian direpresentasikan melalui dua komponen utama: `Node`, yang memuat informasi nama dan NIM mahasiswa serta pointer ke node berikutnya, dan `Queue`, yang merepresentasikan antrian secara keseluruhan dengan pointer ke elemen depan (`front`) dan belakang (`back`) serta variabel `size` untuk menyimpan jumlah elemen. Fungsi-fungsi dalam struktur `Queue` seperti `enqueueAntrian`, `dequeueAntrian`, `countQueue`, `clearQueue`, dan `viewQueue` memberikan kemampuan untuk menambah, menghapus, menghitung, membersihkan, serta menampilkan elemen-elemen dalam antrian. Dengan penggunaan fungsi-fungsi tersebut, program mampu mengelola daftar mahasiswa dengan efisien. Dalam `main()`, program menguji fungsionalitasnya dengan menambah, menghapus, dan menampilkan daftar mahasiswa dalam antrian, memberikan pemahaman yang jelas tentang penggunaan struktur data antrian dengan linked list dalam konteks daftar mahasiswa.
 
 ## Kesimpulan
-Dapat disimpulkan bahwa 
+Setelah mempelajari materi tentang Queue dan penerapannya pada Linked List dan Array kita dapat mengetahui bahwa Queue adalah struktur data yang mengikuti prinsip FIFO (First-In-First-Out), artinya elemen yang pertama kali masuk akan menjadi yang pertama kali keluar. Queue dapat diimplementasikan menggunakan Linked List atau Array. Linked List memberikan fleksibilitas dalam penambahan dan penghapusan elemen, sementara Array menyediakan akses langsung ke elemen-elemen dalam antrian. Implementasi Queue menggunakan Linked List membutuhkan alokasi memori dinamis untuk setiap elemen yang ditambahkan atau dihapus. Ini memungkinkan antrian tumbuh atau menyusut sesuai kebutuhan. Implementasi Queue menggunakan Array memiliki batasan ukuran tetap, yang berarti antrian memiliki kapasitas maksimum yang sudah ditentukan sebelumnya. Jika antrian penuh, tidak mungkin menambahkan elemen baru ke dalamnya. Operasi dasar pada Queue meliputi enqueue (menambahkan elemen ke dalam antrian), dequeue (menghapus elemen dari antrian), isEmpty (memeriksa apakah antrian kosong), countQueue (menghitung jumlah elemen dalam antrian), dan viewQueue (menampilkan elemen-elemen dalam antrian). Penggunaan Queue sangat berguna dalam situasi di mana ada kebutuhan untuk memproses data secara berurutan sesuai dengan waktu kedatangannya, seperti simulasi antrian pelanggan atau penjadwalan tugas. Pemilihan implementasi Queue (Linked List atau Array) tergantung pada kebutuhan dan karakteristik spesifik masalah yang akan diselesaikan. Linked List lebih fleksibel, sementara Array lebih efisien dalam akses elemen.
+
+Dengan memahami konsep dasar Queue dan penerapannya menggunakan Linked List dan Array, kita dapat memanfaatkannya untuk memecahkan berbagai masalah yang melibatkan pengolahan data berdasarkan urutan waktu kedatangan.
 
 ## Referensi
-[1] "Struktur Data Stack : Pengertian, Karakteristik, dan Kegunaan", Trivusi, 2022
-     https://www.trivusi.web.id/2022/07/struktur-data-stack.html
+[1] Annisa. 2023 "Struktur Data Queue: Pengertian ,Fungsi dan Jenisnya", UMSU.
 
-[2] "Apa itu tumpukan? tutorial Lengkap", geeksforgeeks, 2024
-    https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/
+[2] "QUEUE (ANTRIAN)", Repository UDINUS
+https://repository.dinus.ac.id/docs/ajar/Pertemuan_6,7_Queue_(Antrian).pptx
 
 
 
